@@ -1,25 +1,33 @@
+// app.json
 {
   "expo": {
-    "name": "GoConstellation",
-    "slug": "GoConstellation",
+    "name": "SpaceX-Info",
+    "slug": "SpaceX-Info",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
-    "userInterfaceStyle": "light",
-    "newArchEnabled": true,
+    "icon": "./assets/splash.png",
+    "userInterfaceStyle": "dark",
     "splash": {
-      "image": "./assets/splash-icon.png",
+      "image": "./assets/splash.png",
       "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "backgroundColor": "#0A1128"
     },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.yourusername.goconstellation"
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#ffffff"
-      }
+        "foregroundImage": "./assets/splash.png",
+        "backgroundColor": "#0A1128"
+      },
+      "package": "com.yourusername.goconstellation"
     },
     "web": {
       "favicon": "./assets/favicon.png"
